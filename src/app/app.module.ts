@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TodoContainerComponent } from './components/todo/todo-container/todo-container.component';
 import { TodoItemComponent } from './components/todo/todo-item/todo-item.component';
 import { TodoNavigationComponent } from './components/todo/todo-navigation/todo-navigation.component';
+import { TodoListComponent } from './components/todo/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoContainerComponent,
     TodoItemComponent,
-    TodoNavigationComponent
+    TodoNavigationComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
