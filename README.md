@@ -1,27 +1,35 @@
-# NyaantodoNgrxcomplex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+ng new nyaanmaster
+cd nyaanmaster
+ng --version
+ng -v
+git status
+git config user.name 'hyoushke'
+git config user.email 'hyoushke@gmail.com'
 
-## Development server
+npm install @angular/material --save
+npm install @angular/animations --save
+npm install @angular/cdk --save
+npm install hammerjs --save
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm install @ngrx/store --save
+npm install @ngrx/effects --save
+npm install @ngrx/entity --save
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+mkdir app/components
+mkdir app/models
+mkdir app/services
+mkdir app/store
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+mkdir app/components/todo
+ng g component components/todo/todo-container
+ng g component components/todo/todo-navigation
+ng g component components/todo/todo-form
+ng g component components/todo/todo-item
+ng g component components/todo/todo-list
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ng serve --port 9090 --poll 1000
